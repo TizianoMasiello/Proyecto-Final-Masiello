@@ -62,9 +62,26 @@
         </div>
       </nav>
     </header>
-    <!-- Productos -->
     <main>
+      <!-- Productos -->
       <div id="productos" class="productos"></div>
+      <!-- Carrito de compras -->
+      <div id="carrito">
+        <table>
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Unidades</th>
+              <th>Costo Unitario</th>
+              <th>Costo Total</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot id="totales"></tfoot>
+        </table>
+      </div>
     </main>
     <!-- Modulos de JS -->
     <script type="module" src="./js/inicio.js"></script>

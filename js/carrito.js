@@ -1,4 +1,4 @@
-// import { productosDisponibles } from "./inicio.js";
+// import { traerDatos } from "./inicio.js";
 
 // JSON.parse(sessionStorage.getItem("carrito")) === null &&
 //   sessionStorage.setItem("carrito", JSON.stringify([]));

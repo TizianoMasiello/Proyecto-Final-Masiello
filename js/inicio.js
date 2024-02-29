@@ -1,4 +1,5 @@
 // import { comprarProducto } from "./carrito.js";
+
 const divProductos = document.getElementById("productos");
 const filterInput = document.getElementById("filter__input");
 
@@ -31,8 +32,9 @@ filterInput.addEventListener("input", () => {
   saveKeyword(query);
   filterProductos(query);
 });
+
 // Traemos datos al DOM
-const traerDatos = async () => {
+export const traerDatos = async () => {
   try {
     const response = await fetch("./db/data.json");
     const data = await response.json();
@@ -55,7 +57,7 @@ const traerDatos = async () => {
       btnComprar.addEventListener("click", () => comprarProducto(id));
     });
   } catch (error) {
-    console.error("No se encontro la info", error);
+    console.error("No se encontró la info", error);
   }
 };
 traerDatos();

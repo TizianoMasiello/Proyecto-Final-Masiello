@@ -5,92 +5,53 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Titulo -->
-    <title>Market</title>
+    <title>Fruit Market</title>
+    <!-- Icóno -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Link a CSS propio -->
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- Link a Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <!-- Encabezado -->
     <header>
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
+      <!-- NavBar -->
+      <div class="nav-container">
+        <nav class="navbar">
           <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjd6MNBQkPxAtwEQhwm8f6woNOxEdm_A5TjOn8mQYjDrKTXDgycXA0xgWNB88dUFA5H7A&usqp=CAU"
-              alt=""
-              width="50"
-              height="50"
-            />
-          </a>
+          <h1 class="navbar-logo">Green Market</h1>
           <!-- Buscador -->
           <form class="d-flex" role="search">
             <input
-              class="form-control me-2"
+              id="filter__input"
               type="search"
               placeholder="Busque su producto"
               aria-label="Search"
-              id="filter__input"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Buscar
-            </button>
+            <button type="submit">Buscar</button>
           </form>
           <!-- Carrito -->
-          <div id="btnCarrito">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              fill="currentColor"
-              class="bi bi-cart"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-              />
-            </svg>
-            <p id="contador__carrito"></p>
-          </div>
-        </div>
-      </nav>
+          <h1 class="btn-carrito" id="btnCarrito">
+            🛒<span id="cantidadCarrito" class="cantidad-carrito"></span>
+          </h1>
+        </nav>
+      </div>
     </header>
     <main>
+      <!-- Banner -->
+      <div class="banner">
+        <div class="banner-container">
+          <h1>Green Market</h1>
+          <p>The best place to do your shopping</p>
+        </div>
+      </div>
+      <hr />
       <!-- Productos -->
       <div id="productos" class="productos"></div>
-      <!-- Carrito de compras -->
-      <div id="carrito">
-        <table>
-          <thead>
-            <tr>
-              <th>Imagen</th>
-              <th>Nombre</th>
-              <th>Unidades</th>
-              <th>Costo Unitario</th>
-              <th>Costo Total</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody id="items"></tbody>
-          <tfoot id="totales"></tfoot>
-        </table>
-      </div>
+      <!-- Modal container -->
+      <div id="modal-container" class="modal-container"></div>
     </main>
     <!-- Modulos de JS -->
     <script type="module" src="./js/inicio.js"></script>
     <script type="module" src="./js/carrito.js"></script>
-    <!-- Link a Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

@@ -1,10 +1,14 @@
-// import { comprarProducto } from "./carrito.js";
-
+// Shop Content
 const divProductos = document.getElementById("productos");
+// Filtro de busqueda
 const filterInput = document.getElementById("filter__input");
-
+// Boton carrito
+export const btnCarrito = document.getElementById("btnCarrito");
+export const modalContainer = document.getElementById("modal-container");
+export const cantidadCarrito = document.getElementById("cantidadCarrito");
+// Carrito
+export let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 // Filtrado Input
-
 const saveKeyword = (keyword) => {
   let keywords = JSON.parse(localStorage.getItem("keywords")) || [];
   if (!keywords.includes(keyword)) {
@@ -12,7 +16,6 @@ const saveKeyword = (keyword) => {
     localStorage.setItem("keywords", JSON.stringify(keywords));
   }
 };
-
 const filterProductos = (query) => {
   const productos = divProductos.getElementsByClassName("producto");
   Array.from(productos).forEach((producto) => {
@@ -26,13 +29,11 @@ const filterProductos = (query) => {
     }
   });
 };
-
 filterInput.addEventListener("input", () => {
   const query = filterInput.value.toLowerCase();
   saveKeyword(query);
   filterProductos(query);
 });
-
 // Traemos datos al DOM
 export const traerDatos = async () => {
   try {
@@ -49,15 +50,42 @@ export const traerDatos = async () => {
               <h5 class="card-title">${nombre}</h5>
               <p class="card-text">Categoria: ${categoria}</p>
               <p class="card-text">Precio: $${precio}</p>
-              <button id="comprar${id}" class="btn btn-primary">Comprar</button>
+              <button id="comprar${id}" class="button">COMPRAR</button>
             </div>
           </div>`;
       divProductos.appendChild(card);
+
       const btnComprar = document.getElementById(`comprar${id}`);
-      btnComprar.addEventListener("click", () => comprarProducto(id));
+
+      btnComprar.addEventListener("click", () => {
+        const repeat = carrito.some((repeatItem) => repeatItem.id === item.id);
+        if (repeat) {
+          carrito.map((prod) => {
+            if (prod.id === item.id) {
+              prod.cantidad++;
+            }
+          });
+        } else {
+          carrito.push({
+            id: item.id,
+            imagen: item.imagen,
+            nombre: item.nombre,
+            precio: item.precio,
+            cantidad: item.cantidad,
+          });
+        }
+        console.log(carrito);
+        console.log(carrito.length);
+        carritoCounter();
+        saveLocal();
+      });
     });
   } catch (error) {
     console.error("No se encontró la info", error);
   }
 };
 traerDatos();
+// Set item
+export const saveLocal = () => {
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+};

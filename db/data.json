@@ -4,181 +4,207 @@
     "nombre": "Banana Ecuador Por Kg",
     "precio": 2490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/790316-1200-auto?v=638272137671900000&width=1200&height=auto&aspect=true",
-    "categoria": "Bananas"
+    "categoria": "Bananas",
+    "cantidad": 1
   },
   {
     "id": 2,
     "nombre": "Manzana Roja Por Kg",
     "precio": 2490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/180100-1200-auto?v=636383390519870000&width=1200&height=auto&aspect=true",
-    "categoria": "Manzanas"
+    "categoria": "Manzanas",
+    "cantidad": 1
   },
   {
     "id": 3,
     "nombre": "Pera Por Kg",
     "precio": 1490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/447462-1200-auto?v=636559053682470000&width=1200&height=auto&aspect=true",
-    "categoria": "Peras"
+    "categoria": "Peras",
+    "cantidad": 1
   },
   {
     "id": 4,
     "nombre": "Palta Hass Elegida Unidad",
     "precio": 1490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/763476-1200-900?v=638080005645570000&width=1200&height=900&aspect=true",
-    "categoria": "Paltas"
+    "categoria": "Paltas",
+    "cantidad": 1
   },
   {
     "id": 5,
     "nombre": "Cereza Por Kg",
     "precio": 6499,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/423389-1200-900?v=636481038055770000&width=1200&height=900&aspect=true",
-    "categoria": "Cerezas"
+    "categoria": "Cerezas",
+    "cantidad": 1
   },
   {
     "id": 6,
     "nombre": "Sandía Por Kg",
     "precio": 499,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/472991-1200-900?v=636695568802870000&width=1200&height=900&aspect=true",
-    "categoria": "Sandías"
+    "categoria": "Sandías",
+    "cantidad": 1
   },
   {
     "id": 7,
     "nombre": "Kiwi Elegido X Kg",
     "precio": 4599,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/537347-1200-900?v=636972888517500000&width=1200&height=900&aspect=true",
-    "categoria": "Kiwis"
+    "categoria": "Kiwis",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "Manzana Gran Smith X Kg",
     "precio": 3490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/472810-1200-900?v=636695562318370000&width=1200&height=900&aspect=true",
-    "categoria": "Manzanas"
+    "categoria": "Manzanas",
+    "cantidad": 1
   },
   {
     "id": 9,
     "nombre": "Pomelo Ruby Star X Kg",
     "precio": 2290,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/472995-1200-900?v=636695570951300000&width=1200&height=900&aspect=true",
-    "categoria": "Pomelos"
+    "categoria": "Pomelos",
+    "cantidad": 1
   },
   {
     "id": 10,
     "nombre": "Pelón Amarillo Grande Elegido X Kg",
     "precio": 1999,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/429827-1200-900?v=636501207363170000&width=1200&height=900&aspect=true",
-    "categoria": "Pelones"
+    "categoria": "Pelones",
+    "cantidad": 1
   },
   {
     "id": 11,
     "nombre": "Piña Gold X Kg",
     "precio": 3290,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/763477-1200-900?v=638080005648530000&width=1200&height=900&aspect=true",
-    "categoria": "Ananás"
+    "categoria": "Ananás",
+    "cantidad": 1
   },
   {
     "id": 12,
     "nombre": "Durazno Blanco Especial S/e 1 Kg",
     "precio": 2299,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/522297-1200-900?v=636864884418570000&width=1200&height=900&aspect=true",
-    "categoria": "Duraznos"
+    "categoria": "Duraznos",
+    "cantidad": 1
   },
   {
     "id": 13,
     "nombre": "Uva Negra X Kg",
     "precio": 1490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/424011-1200-900?v=636482200571670000&width=1200&height=900&aspect=true",
-    "categoria": "Uvas"
+    "categoria": "Uvas",
+    "cantidad": 1
   },
   {
     "id": 14,
     "nombre": "Limón Organico",
     "precio": 1990,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/698609-1200-900?v=637871997721370000&width=1200&height=900&aspect=true",
-    "categoria": "Limones"
+    "categoria": "Limones",
+    "cantidad": 1
   },
   {
     "id": 15,
     "nombre": "Lima X Kg",
     "precio": 2999,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/427919-1200-900?v=636495157530100000&width=1200&height=900&aspect=true",
-    "categoria": "Limones"
+    "categoria": "Limones",
+    "cantidad": 1
   },
   {
     "id": 16,
     "nombre": "Mango X Unidad",
     "precio": 990,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/421046-1200-900?v=636481014880000000&width=1200&height=900&aspect=true",
-    "categoria": "Mangos"
+    "categoria": "Mangos",
+    "cantidad": 1
   },
   {
     "id": 17,
     "nombre": "Frutilla Cubeta 250 Gr",
     "precio": 1490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/472802-1200-900?v=636695562273400000&width=1200&height=900&aspect=true",
-    "categoria": "Frutillas"
+    "categoria": "Frutillas",
+    "cantidad": 1
   },
   {
     "id": 18,
     "nombre": "Frambuesa Por U",
     "precio": 2490,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/425037-1200-900?v=636489966834100000&width=1200&height=900&aspect=true",
-    "categoria": "Frambuesas"
+    "categoria": "Frambuesas",
+    "cantidad": 1
   },
   {
     "id": 19,
     "nombre": "Plátano X Kg",
     "precio": 2899,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/424307-1200-900?v=636486511462430000&width=1200&height=900&aspect=true",
-    "categoria": "Bananas"
+    "categoria": "Bananas",
+    "cantidad": 1
   },
   {
     "id": 20,
     "nombre": "Naranja Jugo Especial",
     "precio": 2299,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/447204-1200-900?v=636559052624870000&width=1200&height=900&aspect=true",
-    "categoria": "Naranjas"
+    "categoria": "Naranjas",
+    "cantidad": 1
   },
   {
     "id": 21,
     "nombre": "Ciruela Cubeta Bja - 500 Gr",
     "precio": 1990,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/637567-1200-900?v=637540968191000000&width=1200&height=900&aspect=true",
-    "categoria": "Ciruelas"
+    "categoria": "Ciruelas",
+    "cantidad": 1
   },
   {
     "id": 22,
     "nombre": "Pera Red Battler 1 Kg",
     "precio": 1599,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/180080-1200-900?v=636383390097700000&width=1200&height=900&aspect=true",
-    "categoria": "Peras"
+    "categoria": "Peras",
+    "cantidad": 1
   },
   {
     "id": 23,
     "nombre": "Manzana Royal Gala Por Kg",
     "precio": 2999,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/472811-1200-900?v=636695562322100000&width=1200&height=900&aspect=true",
-    "categoria": "Manzanas"
+    "categoria": "Manzanas",
+    "cantidad": 1
   },
   {
     "id": 24,
     "nombre": "Melón Piel De Sapo X Kg",
     "precio": 2290,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/447216-1200-900?v=636559052670600000&width=1200&height=900&aspect=true",
-    "categoria": "Melones"
+    "categoria": "Melones",
+    "cantidad": 1
   },
   {
     "id": 25,
     "nombre": "Granada Unidad",
     "precio": 649,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/449517-1200-900?v=636568556445070000&width=1200&height=900&aspect=true",
-    "categoria": "Granadas"
+    "categoria": "Granadas",
+    "cantidad": 1
   },
   {
     "id": 26,
     "nombre": "Pera Asiática",
     "precio": 4200,
     "imagen": "https://jumboargentina.vtexassets.com/arquivos/ids/657351-1200-900?v=637626717065930000&width=1200&height=900&aspect=true",
-    "categoria": "Peras"
+    "categoria": "Peras",
+    "cantidad": 1
   }
 ]

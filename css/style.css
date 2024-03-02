@@ -34,6 +34,20 @@ body {
   cursor: pointer;
 }
 
+/* Carrito Counter */
+
+.cantidad-carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+
 /* Banner styles */
 
 .banner {
@@ -62,6 +76,24 @@ body {
   color: white;
   opacity: 0.7;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter input */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* Fondo negro */
+  padding: 10px 20px; /* Ajuste de relleno */
+}
+
+#filter__input {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 /* Items */
@@ -144,7 +176,7 @@ body {
 .modal-container > .modal-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 70%;
   margin: 10px;
@@ -160,11 +192,12 @@ body {
   padding: 20px;
   text-align: center;
   padding-top: 20px;
+  justify-content: space-between;
 }
 
 /*se agregaron unas lineas de css con media querys para que se adapte mejor al responsive :)*/
 
-/* @media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .modal-container {
     width: 100%;
     margin: 0;
@@ -181,26 +214,12 @@ body {
     height: 80px;
     width: 80px;
   }
-} */
+}
 
 /* Delete button product */
 
 .delete-item {
   cursor: pointer;
-}
-
-/* CarritoCounter*/
-
-.cantidad-carrito {
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 4px;
-  top: 37px;
-  right: 14px;
-  position: absolute;
-  display: none;
 }
 
 .sumar {
@@ -209,4 +228,93 @@ body {
 
 .restar {
   cursor: pointer;
+}
+
+/* Footer */
+
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #0a0909;
+  color: #fff;
+  padding: 20px;
+}
+.container-footer > div {
+  padding: 10px;
+}
+.container-footer > div:nth-child(even) {
+  background-color: #0a0909;
+}
+.container-footer > div h3 {
+  margin-top: 0;
+}
+.container-footer > div ul {
+  list-style: none;
+  padding: 0;
+}
+.container-footer > div ul li {
+  margin-bottom: 5px;
+}
+.container-footer > div ul li a {
+  color: white;
+}
+
+/* Media queries para dispositivos más pequeños */
+@media only screen and (max-width: 750px) {
+  /* Navbar en dispositivos pequeños */
+
+  /* Filtro de entrada en dispositivos pequeños */
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #filter__input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Artículos en dispositivos pequeños */
+  .productos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+  }
+
+  /* Modal en dispositivos pequeños */
+  .modal-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-header-title {
+    margin-bottom: 10px;
+  }
+
+  .modal-container > .modal-content {
+    flex-direction: column;
+  }
+
+  .modal-container > div > img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .total-content {
+    font-size: 20px;
+  }
+
+  /* Footer en dispositivos pequeños */
+  .container-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .container-footer > div {
+    padding: 10px 0;
+  }
 }

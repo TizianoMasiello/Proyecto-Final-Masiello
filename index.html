@@ -7,9 +7,15 @@
     <!-- Titulo -->
     <title>Fruit Market</title>
     <!-- Icóno -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img-ico/460.png" type="image/x-icon" />
     <!-- Link a CSS propio -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link a Toastify CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body>
     <!-- Encabezado -->
@@ -18,17 +24,7 @@
       <div class="nav-container">
         <nav class="navbar">
           <!-- Logo -->
-          <h1 class="navbar-logo">Green Market</h1>
-          <!-- Buscador -->
-          <form class="d-flex" role="search">
-            <input
-              id="filter__input"
-              type="search"
-              placeholder="Busque su producto"
-              aria-label="Search"
-            />
-            <button type="submit">Buscar</button>
-          </form>
+          <h1 class="navbar-logo">Fruit Market</h1>
           <!-- Carrito -->
           <h1 class="btn-carrito" id="btnCarrito">
             🛒<span id="cantidadCarrito" class="cantidad-carrito"></span>
@@ -45,13 +41,54 @@
         </div>
       </div>
       <hr />
+      <!-- Buscador -->
+      <div class="container">
+        <input
+          id="filter__input"
+          type="search"
+          placeholder="BUSCA TU PRODUCTO"
+          aria-label="Search"
+        />
+      </div>
       <!-- Productos -->
       <div id="productos" class="productos"></div>
       <!-- Modal container -->
       <div id="modal-container" class="modal-container"></div>
     </main>
+    <!-- Footer -->
+    <footer class="container-footer">
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Teléfono: + 54 11 2742 2622</li>
+          <li>Email: tizianomasiello1@gmail.com</li>
+        </ul>
+      </div>
+      <div></div>
+      <div>
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/tiziano-m-544b55269/"
+              >Linkedin</a
+            >
+          </li>
+          <li><a href="https://twitter.com/MasielloTiziano">Twitter</a></li>
+          <li>
+            <a href="https://www.instagram.com/tiziano.masiello/">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
     <!-- Modulos de JS -->
     <script type="module" src="./js/inicio.js"></script>
-    <script type="module" src="./js/carrito.js"></script>
+    <!-- Link a SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Link a Toastify -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>
